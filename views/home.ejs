@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Title</title>
+        <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Henni</h1>
+        <h2>Télévisions</h2>
+            
+
+            <table style="width:100%">
+                <tr>
+                    <th>Marque</th>
+                    <th>Prix</th>
+                    <th>Taille</th>
+                    <th>Disponibilité</th>
+                    <th>Achetée</th>
+                    <th>Fonctionnelle</th>
+                    <th>Cassée</th>
+
+                </tr>
+                <% for (let i = 0; i<Marque.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= Marque[i] %> 
+                    </td>
+                    <td>
+                        <%= Prix[i] %> 
+                    </td>
+                    <td>
+                        <%= Taille[i] %>
+                    </td>
+                    <td>
+                        <%= Disponibilité[i] %> 
+                    </td>
+                    <td>
+                        <%= Achetée[i] %> 
+                    </td>
+                    <td>
+                        <%= Fonctionnelle[i] %> 
+                    </td>
+                    <td>
+                        <%= Cassée[i] %> 
+                    </td>
+                </tr>
+                <% } %>
+            </table>
+
+    </body>
+</html>
